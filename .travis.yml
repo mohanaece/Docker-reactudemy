@@ -8,7 +8,7 @@ before_install:
   - docker build -t mohanaece/docker-reactudemy -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true stephengrider/docker-react npm run test
+  - docker run -e CI=true mohanaece/docker-reactudemy npm run test
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-2"
