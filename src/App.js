@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React - chaged for feature
+          Learn React pls come or feature
         </a>
       </header>
     </div>
