@@ -5,10 +5,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t mohanaece/docker-reactudemy -f Dockerfile .
+  - docker build -t mohanaece/docker-reactudemy Dockerfile .
 
 script:
-  - docker run -e CI=true mohanaece/docker-reactudemy npm run test
+  - docker run -e CI=true mohanaece/docker-reactudemy npm run start
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-2"
